@@ -10,21 +10,25 @@ namespace CalculatorWebAPI.Controllers
         [HttpGet]
         public double Add(int lVal, int rVal)
         {
+            Response.Headers.Add("Access-Control-Allow-Origin", "https://localhost:44362");
             return lVal + rVal;
         }
         [HttpGet]
         public double Subtract(int lVal, int rVal)
         {
+            Response.Headers.Add("Access-Control-Allow-Origin", "https://localhost:44362");
             return lVal - rVal;
         }
         [HttpGet]
         public double Multiply(int lVal, int rVal)
         {
+            Response.Headers.Add("Access-Control-Allow-Origin", "https://localhost:44362");
             return lVal * rVal;
         }
         [HttpGet]
         public double Divide(int lVal, int rVal)
         {
+            Response.Headers.Add("Access-Control-Allow-Origin", "https://localhost:44362");
             return lVal/rVal;
         }
     }
