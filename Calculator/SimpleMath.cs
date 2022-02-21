@@ -4,6 +4,7 @@ namespace Calculator
 {
     public class SimpleMath
     {
+        //class library to compute
         public double Calculate(int lVal, int rVal, string operation)
         {
             double result = 0;

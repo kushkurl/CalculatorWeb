@@ -6,6 +6,7 @@ namespace Calculator_TestCases
     [TestClass]
     public class CalculatorTestCases
     {
+        //test cases if output for differnt operations
         [TestMethod]
         public void testAdd()
         {
