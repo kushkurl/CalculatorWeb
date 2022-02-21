@@ -4,27 +4,28 @@ namespace Calculator
 {
     public class SimpleMath
     {
-        public double Calculate(int num1, int num2, string operation)
+        public double Calculate(int lVal, int rVal, string operation)
         {
             double result = 0;
             switch (operation)
             {
                 case "Add":
-                    result = num1 + num2;
+                    result = lVal + rVal;
                     break;
                 case "Sub":
-                    result = num1 + num2;
+                    result = lVal - rVal;
                     break;
                 case "Mult":
-                    result = num1 * num2;
+                    result = lVal * rVal;
                     break;
                 case "Div":
-                    result = num1 / num2;
+                    result = lVal / rVal;
                     break;
                 default:
                     break;
             }
             return result;
         }
+
     }
 }

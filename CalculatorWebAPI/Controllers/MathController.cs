@@ -28,8 +28,13 @@ namespace CalculatorWebAPI.Controllers
             return math.Calculate(lVal, rVal, "Mult");
         }
         [HttpGet]
-        public double Divide(int lVal, int rVal)
+        public double? Divide(int lVal, int rVal)
         {
+            if(rVal == 0)
+            {
+                Response.StatusCode = 400;
+                return null;
+            }
             Response.Headers.Add("Access-Control-Allow-Origin", "https://localhost:44362");
             return math.Calculate(lVal, rVal, "Div");
         }
